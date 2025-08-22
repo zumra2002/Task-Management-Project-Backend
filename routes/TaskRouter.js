@@ -9,7 +9,7 @@ const validateRequest = (req, res, next) => {
   if (!errors.isEmpty()) {                //check if there are errors
     return res.status(400).json({ errors: errors.array() });
   }
-  next(); //if no errors,move to the controlle
+  next(); //if no errors,move to the controller
 };
 
 //validation using express-validaor
